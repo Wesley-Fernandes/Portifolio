@@ -11,7 +11,7 @@ export default function About() {
         <div className='Left-table'>
             {value>0 && (
                 <AboutC title={"Quem eu sou"}>
-                    Meu nome é Wesley fernandes, tenho aproximadamente 20 anos e sou apaixonado por tecnologia desde meus 17 anos. Atualmente trabalho na empressa <a href="https://www.facebook.com/intelligence.myvillage/">Intelligence - MyVillage</a>. Focando meus estudos contemporanemante apenas nessa area, mais especificamente em front-end. Tendo completado diversos cursos, desde Python até Javascript.
+                    Meu nome é Wesley fernandes, tenho aproximadamente 20 anos e sou apaixonado por tecnologia desde meus 17 anos. Atualmente trabalho na empressa <a href="https://www.facebook.com/intelligence.myvillage/">Intelligence - MyVillage</a>. Focando meus estudos contemporaneamente apenas nessa area, mais especificamente em front-end. Tendo completado diversos cursos, desde Python até Javascript.
                 </AboutC>
             )}
             {value>1 && (
