@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Me from "../../Imgs/perfil.jpg"
 import "./Home.sass"
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,6 +10,7 @@ import About from '../About/About';
 import Footer from '../../Components/Footer/Footer';
 
 export default function Home() {
+  
     const [page, setPage] = useState("Home");
 
   return (
@@ -20,7 +20,7 @@ export default function Home() {
         <Main>
           <div className='main-contents'>
             <div className='left-side'>
-              <img src={Me}/>
+              <img src="https://avatars.githubusercontent.com/u/89518536?v=4"/>
               <div className='Hud__socialNewtorks'>
                   <a href="https://github.com/Wesley-Fernandes"><FaGithub/></a>
                   <a href="https://www.linkedin.com/in/wesley-israel-fernandes"><FaLinkedin/></a>

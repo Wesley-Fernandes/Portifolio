@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { SiJavascript, SiHtml5, SiSass, SiCss3, SiBootstrap, SiReact, SiGit, SiGithub,SiNodedotjs, SiNodemon, SiSocketdotio, SiReactrouter, SiFirebase, SiMysql, SiPostgresql,SiHandlebarsdotjs, SiStyledcomponents } from 'react-icons/si'
 import "./About.sass"
-import Picture from "../../Imgs/perfil.jpg"
 import AboutC from '../../Components/About-Content/AboutContent'
 
 export default function About() {
