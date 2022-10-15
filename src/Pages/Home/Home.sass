@@ -1,0 +1,73 @@
+.main-contents
+    display: flex
+    flex-wrap: wrap
+    @media screen and (max-width: 778px)
+        flex-direction: column
+        overflow-y: scroll
+
+
+    .left-side
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 50%
+        @media screen and (max-width: 778px)
+            width: 100%
+            margin-bottom: 1.5rem
+
+        img
+            width: 40%
+            border: 5px solid #9bcfde
+            border-radius: 20px
+            @media screen and (max-width: 778px)
+                width: 100px
+                border-radius: 100%
+                border: 5px solid #9bcfde
+
+
+        .Hud__socialNewtorks
+            display: flex
+            margin-top: 10px
+            justify-content: space-between
+            width: 40%
+            @media screen and (max-width: 778px)
+                width: 70%
+                height: 80px
+
+            svg
+                width: 100%
+                height: 100%
+                color: #9bcfde
+                @media screen and (max-width: 778px)
+                    width: 40px
+                    height: 40px
+
+
+
+
+        
+           
+
+
+
+    .right-side
+        width: 50%
+        height: calc( 100vh - 160px)
+        display: flex
+        justify-content: center
+        overflow-y: scroll
+        @media screen and (max-width: 778px)
+            flex-direction: column
+            width: 100%
+            height: 100%
+            overflow-y: hidden
+
+
+
+        
+
+
+
+
