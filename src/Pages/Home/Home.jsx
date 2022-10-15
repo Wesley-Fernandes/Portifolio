@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Me from "../../Imgs/Perfil.jpg"
+import Me from "../../Imgs/perfil.jpg"
 import "./Home.sass"
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import 'bootstrap/dist/css/bootstrap.min.css';
