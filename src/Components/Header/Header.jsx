@@ -1,24 +1,66 @@
-import React from 'react'
-import logo from "../../Imgs/infinitum.gif"
-import { Link } from 'react-router-dom'
-import "./Header.sass"
-export default function Header({setPage}) {
-
+import React, {useState} from "react";
+import logo from "../../Imgs/infinitum.gif";
+import { Link } from "react-router-dom";
+import { ImMenu, ImArrowRight } from "react-icons/im";
+import "./Header.sass";
+export default function Header({ setPage }) {
+  const [show, setShow] = useState(false)
   function changePage(page) {
-    setPage(page)
+    setPage(page);
   }
+//https://api.github.com/users/wesley-fernandes
+  function menu_changer(){
+    if(show===false){
+      setShow(true);
+      return
+    }else{
+      setShow(false);
+      return
+    }
+  }
+
   return (
-    <header className='header-site'>
-        <div className='header-icon'>
-            <img className='animate__animated animate__bounceIn' src={logo} alt="Logo icon"/>
+    <header className="header-site">
+      <nav className="header-nav">
+        <ImMenu className="header-menu" onClick={menu_changer}/>
+        <div className="header--menu--macro">
+          <span className="item" onClick={() => changePage("Home")}>
+              Sobre mim
+          </span>
+          <span className="item" onClick={() => changePage("Contacts")}>
+              Redes Sociais
+          </span>
+          <span className="item" onClick={() => changePage("Tecnologias")}>
+              Tecnologias
+          </span>
+          <span className="item" onClick={() => changePage("Projects")}>
+              Projetos
+          </span>
         </div>
-        <nav className='header-nav'>
-            <ul className='header-ul'>
-                <li><button onClick={()=>changePage("Home")}>Home</button></li>
-                <li><button onClick={()=>changePage("Contacts")}>Contato</button></li>
-                <li><button onClick={()=>changePage("Projects")}>Projetos</button></li>
-            </ul>
-        </nav>
+        <div className="header--menu--items">
+          {!show ? (
+           <>
+
+           </>  
+          ):(
+            <>
+              <span className="item" onClick={() => changePage("Home")}>
+              Sobre mim
+              </span>
+              <span className="item" onClick={() => changePage("Contacts")}>
+              Redes Sociais
+              </span>
+              <span className="item" onClick={() => changePage("Tecnologias")}>
+              Tecnologias
+              </span>
+              <span className="item" onClick={() => changePage("Projects")}>
+              Projetos
+              </span>
+            </>
+          )}
+          
+        </div>
+      </nav>
     </header>
-  )
+  );
 }

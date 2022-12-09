@@ -16,7 +16,7 @@ export default function Projects() {
   }, [])
   return (
     <div className='Projects-Page'>
-
+      <div className='projects-hud animate__animated animate__fadeInDown'>
         {user_data &&(
           user_data.map((user, index)=>{
             return(
@@ -26,6 +26,8 @@ export default function Projects() {
             )
           })
         )}
+
+      </div>
 
     </div>
   )

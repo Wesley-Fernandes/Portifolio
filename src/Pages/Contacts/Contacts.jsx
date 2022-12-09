@@ -39,7 +39,7 @@ export default function Contacts() {
   return (
     <div className="Contact-Page">
 
-      <div className='Contacts-Hud animate__animated animate__bounceIn'>
+      <div className='Contacts-Hud animate__animated animate__fadeInDown'>
           <form onSubmit={sendEmail}>
             <AiOutlineMail/>
             <hr />
