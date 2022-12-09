@@ -1,0 +1,61 @@
+.Contact-Page
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    
+    .dialog-content
+        display: flex
+        align-content: center
+        justify-content: center
+
+    
+
+
+.Contacts-Hud
+    width: 98%
+    height: 98%
+    border: 4px solid #5802b0
+    box-shadow: -3px 5px 10px 1px #0000009f
+    border-radius: 20px 0 0 20px
+
+    padding: 0.4rem
+    background-color: #fff
+    @media screen and (max-width: 778px)
+        height: 575px
+        border-radius: 0
+
+    form 
+        display: flex
+        flex-direction: column
+        align-items: center
+        svg
+            height: 60px
+            width: 60px
+            color: #5802b0
+            
+        button
+            padding: 0.4rem 1rem
+            border-radius: 10px
+            border: none
+            filter: drop-shadow(1px 1px 2px #5802b0)
+            background: linear-gradient( #5802b0, #27014d)
+            font-weight: bolder
+            color: white
+
+            &:hover
+                outline: 2px solid #a34ef7
+
+        hr
+            width: 100%
+            border-top: 1px solid #2f2f2f
+        input
+            width: 100%
+            height: 40px
+            margin: 0.2rem 0
+            text-indent: 5px
+    
+        textarea
+            min-width: 100%
+            height: 250px
+            text-indent: 5px
